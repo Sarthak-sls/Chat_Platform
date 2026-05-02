@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // 2. Attach Socket.io to that server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Allow React to connect
+    origin: "*", // Allow all origins for prototype testing
     methods: ["GET", "POST"],
   },
 });
