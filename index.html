@@ -10,21 +10,15 @@
     
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'dark-base': '#1e1e2e',
-              'dark-crust': '#11111b',
-              'dark-mantle': '#181825',
-            }
-          }
-        }
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-dark-base: #1e1e2e;
+        --color-dark-crust: #11111b;
+        --color-dark-mantle: #181825;
       }
-    </script>
+    </style>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
 </head>
 <body class="bg-[#1e1e2e]">
     <div id="root"></div>
